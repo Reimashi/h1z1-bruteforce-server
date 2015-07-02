@@ -85,8 +85,8 @@ exports.start = function () {
     configure();
 
     // Iniciamos servidor HTTP
-    http.listen(config.http.port, function(){
-        winston.info("[server.js] Servicio HTTP iniciado (Puerto: " + config.http.port + ").");
+    http.listen((process.env.port || config.http.port), function(){
+        winston.info("[server.js] Servicio HTTP iniciado (Puerto: " + (process.env.port || config.http.port) + ").");
     });
 }
 
