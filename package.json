@@ -4,6 +4,10 @@
     "bugs": {
         "email": "reimashi@gmail.com"
     },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/reimashi/h1z1-bruteforce-server"
+    },
     "dependencies": {
         "uuid": "latest",
         "body-parser": "latest",
